@@ -22,8 +22,18 @@ const App = () => {
       <h1>{numbers[random].number}</h1>
 
       <div className="numbers__buttons">
-        <button onClick={generateNumber}>Numara Ver</button>
-        <button onClick={toggleNumber}>Bu Neydi Şimdi?</button>
+        <button onClick={generateNumber} className="button">
+          <span className="button_lg">
+            <span className="button_sl"></span>
+            <span className="button_text">Generate Number</span>
+          </span>
+        </button>
+        <button onClick={toggleNumber} className="button">
+          <span className="button_lg">
+            <span className="button_sl"></span>
+            <span className="button_text">Show/Hide Answer</span>
+          </span>
+        </button>
       </div>
       <h2 className={on ? "on" : "off"}> {numbers[random].spanish}</h2>
     </main>
